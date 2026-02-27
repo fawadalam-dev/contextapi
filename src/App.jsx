@@ -1,10 +1,18 @@
 import './App.css'
 import Parent from './components/Parent'
+import UserContextWrapper from './hooks/UserContext';
+
+
 function App() {
   return (
-    <div>
-      <Parent />
-    </div>
+    <>
+      <UserContextWrapper>
+
+        <Parent />
+        <h1>Vite + React</h1>
+
+      </UserContextWrapper>
+    </>
   )
 }
 
